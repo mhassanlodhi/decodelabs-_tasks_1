@@ -24,10 +24,10 @@
   cursor: pointer;
   border: 2px solid transparent;
   transition: background-color var(--transition-default),
-              color var(--transition-default),
-              border-color var(--transition-default),
-              box-shadow var(--transition-default),
-              transform var(--transition-default);
+    color var(--transition-default),
+    border-color var(--transition-default),
+    box-shadow var(--transition-default),
+    transform var(--transition-default);
   white-space: nowrap;
 }
 
@@ -180,7 +180,7 @@
   border-radius: 2px;
   position: absolute;
   transition: transform var(--transition-default),
-              opacity var(--transition-default);
+    opacity var(--transition-default);
 }
 
 .header__toggle-inner {
@@ -228,7 +228,7 @@
   gap: var(--space-md);
   transform: translateX(100%);
   transition: transform var(--transition-default),
-              visibility var(--transition-default);
+    visibility var(--transition-default);
   visibility: hidden;
   z-index: 150;
   box-shadow: -8px 0 30px rgba(0, 0, 0, 0.12);
@@ -254,7 +254,7 @@
   color: var(--color-text);
   border-radius: 0.5rem;
   transition: background-color var(--transition-default),
-              color var(--transition-default);
+    color var(--transition-default);
 }
 
 .header__nav-link:hover {
@@ -282,7 +282,7 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-default),
-              visibility var(--transition-default);
+    visibility var(--transition-default);
 }
 
 .nav-backdrop.is-visible {
@@ -377,7 +377,7 @@
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 8px 40px rgba(46, 42, 37, 0.12),
-              0 2px 12px rgba(46, 42, 37, 0.08);
+    0 2px 12px rgba(46, 42, 37, 0.08);
   border: 1px solid rgba(165, 147, 111, 0.15);
 }
 
@@ -453,15 +453,15 @@
   overflow: hidden;
   border: 1px solid rgba(165, 147, 111, 0.12);
   box-shadow: 0 1px 3px rgba(46, 42, 37, 0.06),
-              0 4px 16px rgba(46, 42, 37, 0.04);
+    0 4px 16px rgba(46, 42, 37, 0.04);
   transition: box-shadow var(--transition-default),
-              transform var(--transition-default);
+    transform var(--transition-default);
 }
 
 .card:hover {
   box-shadow: 0 8px 24px rgba(46, 42, 37, 0.14),
-              0 24px 64px rgba(46, 42, 37, 0.12),
-              0 0 0 1px rgba(165, 147, 111, 0.18);
+    0 24px 64px rgba(46, 42, 37, 0.12),
+    0 0 0 1px rgba(165, 147, 111, 0.18);
   transform: translateY(-4px);
 }
 
@@ -512,7 +512,7 @@
   color: var(--color-primary);
   margin-top: var(--space-xs);
   transition: color var(--transition-default),
-              gap var(--transition-default);
+    gap var(--transition-default);
 }
 
 .card__link:hover {
@@ -616,7 +616,7 @@
   background-color: var(--color-surface);
   color: var(--color-text);
   transition: border-color var(--transition-default),
-              box-shadow var(--transition-default);
+    box-shadow var(--transition-default);
 }
 
 .newsletter-form__input::placeholder {
