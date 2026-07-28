@@ -1,12 +1,18 @@
 :root {
   /* Color Palette */
-  --color-primary: #A5936F;      /* Mocha Mousse — stability */
-  --color-accent: #A0D4E0;       /* Ethereal Blue — trust */
-  --color-surface: #F2F0EA;      /* Moonlit Grey — refinement */
-  --color-text: #2E2A25;         /* Accessible dark neutral: 12.5:1 contrast ratio on surface */
-  --color-text-muted: #6B6459;   /* Accessible muted neutral: 5.1:1 contrast ratio on surface */
+  --color-primary: #A5936F;
+  /* Mocha Mousse — stability */
+  --color-accent: #A0D4E0;
+  /* Ethereal Blue — trust */
+  --color-surface: #F2F0EA;
+  /* Moonlit Grey — refinement */
+  --color-text: #2E2A25;
+  /* Accessible dark neutral: 12.5:1 contrast ratio on surface */
+  --color-text-muted: #6B6459;
+  /* Accessible muted neutral: 5.1:1 contrast ratio on surface */
   --color-white: #FFFFFF;
-  --color-focus: #2563EB;        /* High-contrast blue for focus indicators */
+  --color-focus: #2563EB;
+  /* High-contrast blue for focus indicators */
 
   /* Typography Fonts */
   --font-heading: 'Montserrat', sans-serif;
@@ -15,8 +21,10 @@
   /* Typography Font Sizes (Fluid using clamp) */
   --fs-h1: clamp(1.75rem, 4vw + 1rem, 3rem);
   --fs-h2: clamp(1.25rem, 2vw + 1rem, 2rem);
-  --fs-h3: clamp(1.125rem, 1vw + 1rem, 1.5rem); /* Added for card headers, following hierarchy */
-  --fs-h4: clamp(1rem, 0.5vw + 0.9rem, 1.25rem);  /* Added for footer/aside titles */
+  --fs-h3: clamp(1.125rem, 1vw + 1rem, 1.5rem);
+  /* Added for card headers, following hierarchy */
+  --fs-h4: clamp(1rem, 0.5vw + 0.9rem, 1.25rem);
+  /* Added for footer/aside titles */
   --fs-body: clamp(1rem, 0.5vw + 0.9rem, 1.125rem);
   --fs-small: 0.875rem;
 
@@ -33,6 +41,7 @@
   --transition-default: var(--transition-speed) var(--transition-bezier);
 
   /* Layout / Breakpoints */
-  --width-max-page: 75rem; /* 1200px desktop content constraint */
+  --width-max-page: 75rem;
+  /* 1200px desktop content constraint */
   --header-height: 4.5rem;
 }
