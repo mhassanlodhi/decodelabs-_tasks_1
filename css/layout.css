@@ -1,0 +1,47 @@
+/* Macro Layout System */
+
+/* Global sticky footer layout using CSS Grid:
+   rows = header (auto) | page-layout (1fr) | footer (auto) */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+}
+
+/* Main Page Container: single column on mobile, 2-col on tablet+ */
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  width: 100%;
+  max-width: var(--width-max-page);
+  margin-inline: auto;
+  padding: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .page-layout {
+    grid-template-columns: minmax(0, 2.5fr) minmax(260px, 1fr);
+    padding: var(--space-md) var(--space-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-layout {
+    grid-template-columns: minmax(0, 3fr) minmax(300px, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+/* Header: sticky, layered above content */
+.header {
+  width: 100%;
+  border-bottom: 1px solid rgba(165, 147, 111, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}

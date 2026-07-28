@@ -1,0 +1,25 @@
+/* Import Google Fonts - Max 2 families, max 3 weights (Montserrat Bold 700, Roboto Regular 400, Medium 500) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+/* Import CSS modules */
+@import url('reset.css');
+@import url('tokens.css');
+@import url('layout.css');
+@import url('components.css');
+
+/* Global Layout / Glue styles */
+html {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+/* Base link behavior */
+a {
+  transition: color var(--transition-default), background-color var(--transition-default);
+}

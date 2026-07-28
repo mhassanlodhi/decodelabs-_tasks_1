@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CollabHub — The Zen Workspace for High-Velocity Teams</title>
+  <meta name="description"
+    content="CollabHub is a minimalist, lightning-fast project management tool designed to align teams asynchronously, reduce meetings, and streamline workflows.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <!-- Screen Reader Skip Link for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="/" class="header__logo" aria-label="CollabHub home">
+        <img src="assets/images/logo.png" alt="CollabHub logo" class="header__logo-icon" width="28" height="28">
+        <span>Collab<span class="brand-text-hub">Hub</span></span>
+      </a>
+
+      <!-- Menu toggle button for mobile nav drawer, visible below 768px -->
+      <button id="menu-toggle" class="header__toggle" aria-expanded="false" aria-controls="primary-nav"
+        aria-label="Toggle navigation menu">
+        <span class="header__toggle-box" aria-hidden="true">
+          <span class="header__toggle-inner"></span>
+        </span>
+      </button>
+
+      <nav id="primary-nav" class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#features" class="header__nav-link">Features</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#workspaces" class="header__nav-link">Workspaces</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#pricing" class="header__nav-link">Pricing</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#enterprise" class="header__nav-link">Enterprise</a>
+          </li>
+        </ul>
+        <div class="header__nav-actions">
+          <a href="#login" class="btn btn--text">Log In</a>
+          <a href="#signup" class="btn btn--primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Backdrop overlay for mobile nav dismissal -->
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
+  <div class="page-layout">
+    <main id="main-content" class="main-content">
+
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 id="hero-title" class="hero__title">
+            The zen workspace for high-velocity teams.
+          </h1>
+          <p class="hero__lead">
+            Consolidate your tasks, docs, and chat into a single, cohesive feed. CollabHub eliminates status meetings by
+            keeping your team aligned asynchronously.
+          </p>
+          <div class="hero__actions">
+            <a href="#signup" class="btn btn--primary btn--large">Start free trial</a>
+            <a href="#demo" class="btn btn--secondary btn--large">Book live demo</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="assets/images/hero-dashboard.png"
+            alt="Overview of Aura's minimalist interface showing a timeline of tasks and status updates" width="600"
+            height="400" loading="eager" class="hero__image">
+        </div>
+      </section>
+
+      <!-- Core Features Section -->
+      <section id="features" class="features" aria-labelledby="features-title">
+        <h2 id="features-title" class="features__title">
+          Designed for context-rich collaboration
+        </h2>
+        <p class="features__lead">
+          Stop digging through scattered threads. Aura connects the dots between conversation and execution
+          automatically.
+        </p>
+
+        <!-- Container Query Card Grid -->
+        <div class="card-grid">
+
+          <div class="card-container">
+            <article class="card">
+              <div class="card__media">
+                <img src="assets/images/feature-async.png"
+                  alt="A user typing a status update that links to specific tasks" width="360" height="240"
+                  loading="lazy" class="card__image">
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">Asynchronous Statuses</h3>
+                <p class="card__description">
+                  Write once, update everyone. CollabHub's smart check-ins replace standup meetings by auto-aggregating
+                  daily achievements and blockers.
+                </p>
+                <a href="#async-status" class="card__link" aria-label="Learn more about asynchronous statuses">Learn
+                  more &rarr;</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="card-container">
+            <article class="card">
+              <div class="card__media">
+                <img src="assets/images/feature-timeline.png"
+                  alt="A visual Gantt chart showing overlapping project timelines" width="360" height="240"
+                  loading="lazy" class="card__image">
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">Contextual Timelines</h3>
+                <p class="card__description">
+                  Track progress without asking. High-level Gantt timelines connect directly to raw task code
+                  repositories and design documents.
+                </p>
+                <a href="#timelines" class="card__link" aria-label="Learn more about contextual timelines">Learn more
+                  &rarr;</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Sidebar Section -->
+    <aside class="sidebar" aria-label="Sidebar highlights">
+
+      <!-- Widget 1: Interactive Form -->
+      <section class="sidebar-widget" aria-labelledby="widget-newsletter-title">
+        <h3 id="widget-newsletter-title" class="sidebar-widget__title">Weekly Insight Newsletter</h3>
+        <p class="sidebar-widget__text">
+          Get high-velocity project management articles delivered directly to your inbox every Thursday morning.
+        </p>
+        <form class="newsletter-form" action="#newsletter-subscribe" method="POST">
+          <div class="newsletter-form__group">
+            <label for="newsletter-email" class="newsletter-form__label">Email address</label>
+            <input type="email" id="newsletter-email" name="email" class="newsletter-form__input"
+              placeholder="you@company.com" required>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Subscribe</button>
+        </form>
+      </section>
+
+      <!-- Widget 2: Testimonial -->
+      <section class="sidebar-widget" aria-labelledby="widget-testimonial-title">
+        <h3 id="widget-testimonial-title" class="sidebar-widget__title">Loved by operators</h3>
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">
+            "CollabHub shifted our engineering culture. We canceled all status standups and recovered 4 hours per
+            developer every single week."
+          </p>
+          <cite class="testimonial__author">
+            <strong>Sarah Chen</strong><br>
+            VP of Engineering, CloudCore
+          </cite>
+        </blockquote>
+      </section>
+
+      <!-- Widget 3: Sidebar Info Card using the same layout card component (Container Query test) -->
+      <div class="card-container">
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/images/feature-integrations.png"
+              alt="Icons of GitHub, Figma, and Slack linked by connections" width="360" height="240" loading="lazy"
+              class="card__image">
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Unified Integrations</h3>
+            <p class="card__description">
+              Hook up Slack, GitHub, Figma, and Notion to sync updates dynamically. Keep everything in one feed.
+            </p>
+            <a href="#integrations" class="card__link" aria-label="Learn more about unified integrations">Learn more
+              &rarr;</a>
+          </div>
+        </article>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <div class="footer__logo-wrap">
+          <img src="assets/images/logo.png" alt="CollabHub logo" class="footer__logo-icon" width="22" height="22">
+          <span class="footer__logo">CollabHub</span>
+        </div>
+        <p class="footer__tagline">The Zen Workspace for high-performing teams.</p>
+      </div>
+      <div class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__col">
+          <h4 class="footer__title">Product</h4>
+          <ul class="footer__list">
+            <li><a href="#features" class="footer__link">Features</a></li>
+            <li><a href="#pricing" class="footer__link">Pricing</a></li>
+            <li><a href="#security" class="footer__link">Security</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Company</h4>
+          <ul class="footer__list">
+            <li><a href="#about" class="footer__link">About Us</a></li>
+            <li><a href="#careers" class="footer__link">Careers</a></li>
+            <li><a href="#blog" class="footer__link">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Resources</h4>
+          <ul class="footer__list">
+            <li><a href="#docs" class="footer__link">Documentation</a></li>
+            <li><a href="#support" class="footer__link">Help Center</a></li>
+            <li><a href="#status" class="footer__link">System Status</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 CollabHub Technologies Inc. All rights reserved.</p>
+        <p class="footer__accessibility">
+          This site is optimized to conform to Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
