@@ -95,6 +95,7 @@ button {
 
 /* Disable transitions if motion reduction is requested */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
