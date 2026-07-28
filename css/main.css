@@ -6,13 +6,17 @@
 @import url('tokens.css');
 @import url('layout.css');
 @import url('components.css');
+@import url('task-board.css');
 
 /* Global Layout / Glue styles */
 html {
   font-family: var(--font-body);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   font-weight: 700;
   color: var(--color-text);
