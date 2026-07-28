@@ -36,6 +36,9 @@
             <a href="#features" class="header__nav-link">Features</a>
           </li>
           <li class="header__nav-item">
+            <a href="#task-board" class="header__nav-link">Task Board</a>
+          </li>
+          <li class="header__nav-item">
             <a href="#workspaces" class="header__nav-link">Workspaces</a>
           </li>
           <li class="header__nav-item">
@@ -132,6 +135,68 @@
             </article>
           </div>
 
+        </div>
+      </section>
+
+      <!-- Task Board Section — live integration with the CollabHub backend API (Project 2) -->
+      <section id="task-board" class="task-board" aria-labelledby="task-board-title">
+        <h2 id="task-board-title" class="task-board__title">Your Task Board</h2>
+        <p class="task-board__lead">
+          This board reads from and writes to the CollabHub API in real time. Add a task below to see it persist.
+        </p>
+
+        <form id="task-form" class="task-form" aria-labelledby="task-form-title" novalidate>
+          <h3 id="task-form-title" class="task-form__title">Add a new task</h3>
+
+          <div class="task-form__row">
+            <div class="task-form__group">
+              <label for="task-title" class="task-form__label">Title</label>
+              <input type="text" id="task-title" name="title" class="task-form__input" placeholder="e.g. Write API docs"
+                maxlength="120" required>
+            </div>
+            <div class="task-form__group">
+              <label for="task-project" class="task-form__label">Project ID</label>
+              <input type="text" id="task-project" name="projectId" class="task-form__input" placeholder="e.g. p_001"
+                required>
+            </div>
+          </div>
+
+          <div class="task-form__row">
+            <div class="task-form__group">
+              <label for="task-description" class="task-form__label">Description <span
+                  class="task-form__label-optional">(optional)</span></label>
+              <input type="text" id="task-description" name="description" class="task-form__input"
+                placeholder="Short description" maxlength="2000">
+            </div>
+            <div class="task-form__group">
+              <label for="task-priority" class="task-form__label">Priority</label>
+              <select id="task-priority" name="priority" class="task-form__input">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="task-form__actions">
+            <button type="submit" class="btn btn--primary" id="task-form-submit">Add Task</button>
+          </div>
+
+          <p id="task-form-status" class="task-form__status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="task-board__controls">
+          <label for="task-filter-status" class="task-board__filter-label">Filter by status</label>
+          <select id="task-filter-status" class="task-board__filter">
+            <option value="">All tasks</option>
+            <option value="todo">To do</option>
+            <option value="in-progress">In progress</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+
+        <div id="task-list" class="task-list" aria-live="polite" aria-busy="false">
+          <p class="task-list__status">Loading tasks…</p>
         </div>
       </section>
 
@@ -237,6 +302,8 @@
     </div>
   </footer>
 
+  <script src="js/api.js" defer></script>
+  <script src="js/tasks.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 
